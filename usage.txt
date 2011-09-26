@@ -1,3 +1,6 @@
 Example usage:
 360mon.exe COM1
 where COM1 can be replaced by any COM# port.
+
+Press ESC to quit. Two files will be produced, hexlog and asciilog
+hexlog will produce a hex version of the output, asciilog will produce a human readable version
