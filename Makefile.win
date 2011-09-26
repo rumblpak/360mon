@@ -1,0 +1,30 @@
+# Project: 360mon
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = 360mon.o $(RES)
+LINKOBJ  = 360mon.o $(RES)
+LIBS =   
+INCS = 
+CXXINCS = 
+BIN  = 360mon.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before 360mon.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "360mon.exe" $(LIBS)
+
+360mon.o: 360mon.cpp
+	$(CPP) -c 360mon.cpp -o 360mon.o $(CXXFLAGS)
